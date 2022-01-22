@@ -97,7 +97,7 @@ class StreamImpl{
         System.out.println("---------------------------------------");
         System.out.println();
 
-        //Platforms with more than 2000 active monthly users
+        //Platforms with more than or equal to 2000 active monthly users
         System.out.println("Platform with more than or equal to 2000 active users");
         List<Platform> popular = plat.stream()
                                  .filter(p -> p.get_monthly_active_users()>=2000)
